@@ -1,0 +1,33 @@
+.onlinekhabar{
+    float: left;
+    width: 49% ;
+    /*color: #ff0000;*/
+    word-spacing: 10px;
+    font-size: 20px;
+    border-right: 6px solid green;
+
+}
+
+.ekantipur{
+    float: right;
+    width: 49%;
+    /*color: 000;*/
+    /*border: 2px;*/
+    word-spacing: 10px;
+    font-size: 20px;
+
+}
+
+img.center {
+    width: 200px;
+    height: 70px;
+    float: left;
+    /*float: center;*/
+
+}
+
+/*img.center {
+    display: block;
+    margin: 0 auto;
+}
+*/

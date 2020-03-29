@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All news</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+
+
+<div >
+    <a href="#" >
+        <img class="center" src="{{ url_for('static', filename='covid.png') }}" >
+    </a>
+ <h1 style=" text-align: center;"> Corona info in Nepal right now </h1>
+ <br> <br>
+ <hr> <hr>
+</div>
+        <div class="onlinekhabar">
+            <h1 style="color:#00ff00;"> News from online Khabar </h1>
+    {% for news in newsHaru %}
+
+    {% if news.source == 'onlinekhabar' %}
+        <h2 class="headline"> {{news.headline }} </h2>
+        <!-- <p>{{ news.source}} </p> -->
+        <p class="summary"> {{ news.summary}}</p>
+        <a href={{ news.newsLink }}, target="_blank" > Link to the news </a> <hr>
+    {% endif %}
+
+    {% endfor%}
+    </div>
+
+    <div class="ekantipur">
+     <h1 style="color:#00ff00;"> News from ekantipur </h1>
+
+    {% for news in newsHaru %}
+    {% if news.source == 'ekantipur': %}
+        <h2 class="headline"> {{news.headline }} </h2>
+        <!-- <p>{{ news.source}} </p> -->
+        <p class="summary"> {{ news.summary}} </p>
+        <a href={{ news.newsLink }}, target="_blank" > Link to the news </a> <hr>
+
+    {% endif %}
+
+    <!-- <p>This is motherfreaking news hai guys</p> -->
+    {% endfor%}
+        </div>
+
+</body>
+</html>
+
