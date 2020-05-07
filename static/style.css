@@ -1,20 +1,22 @@
 .onlinekhabar{
     float: left;
-    width: 49% ;
+    width: 47% ;
     /*color: #ff0000;*/
     word-spacing: 10px;
     font-size: 20px;
-    border-right: 6px solid green;
+
+    margin: 10px;
 
 }
 
 .ekantipur{
     float: right;
-    width: 49%;
+    width: 48%;
     /*color: 000;*/
     /*border: 2px;*/
     word-spacing: 10px;
     font-size: 20px;
+    margin: 10px;
 
 }
 
@@ -26,8 +28,12 @@ img.center {
 
 }
 
-/*img.center {
-    display: block;
-    margin: 0 auto;
+*{
+
+    background-color: black;
+    color: #cccccc;
 }
-*/
+
+h2{
+    color: blue;
+}
